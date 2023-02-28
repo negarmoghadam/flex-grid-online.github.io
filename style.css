@@ -1,0 +1,124 @@
+:root{
+    --primaryColor:#6d28d9;
+--secondryColor:#ede9fe;
+--mainWhite:#fff;
+--mainBlack:#222;
+--gray:#7c7c7c;
+--mainSpacing:0.1rem;
+--mainTransition:all 0.3s lineare;
+--mainRed:#db2777;
+--bodyColor:#f6f6f6;
+}
+body{
+    font-family:'Shantell Sans', cursive;
+    color: var(--mainBlack);
+    background-color: var(--bodyColor);
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: var(--secondryColor);
+    height:60px ;
+}
+.navbar-center{
+    padding:0 1rem ;
+    width: 100%;
+    max-width: 1170px;
+display: flex;
+justify-content: space-around;
+}
+.menu-color{
+    cursor: pointer;
+    font-size: 1.5rem;
+   color: var(--primaryColor); 
+}
+.nav-title{
+    font-size: 1.5rem;
+    color: var(--mainBlack);
+}
+.cart-btn{
+    cursor: pointer;
+
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+}
+.cart-number{
+    position: absolute;
+    right: -10px;
+    bottom: 18px;
+    background-color: var(--mainRed);
+    border-radius: 100%;
+    width:19px ;
+    height:19px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mainWhite);
+    font-size: 0.765rem;
+}
+/* end navbar */
+
+.products{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   /* background-color: #7c7c7c; */
+}
+.section-title{
+margin:2rem 0 ;
+}
+
+.product-img{
+    width: 100%;
+    min-height: 120px;
+    border-radius:8px 8px 0 0 ;
+}
+.product-center{
+    padding: 0 1rem;
+    width:100%;
+    max-width: 1170px;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+grid-column-gap: 2.5rem;
+grid-row-gap: 5rem;
+
+}
+.product{
+    /* padding: 0 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--mainWhite);
+    padding-bottom: 2rem;
+    border-radius: 8px;
+}
+.product-description{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.add-to-cart{
+    background-color:var(--mainWhite);
+    color: var(--primaryColor);
+    border-radius: 5px;
+    outline:none;
+    border: none;
+    font-weight: bold;
+    padding: 20px 35px;
+}
+.product-title{
+    color: #454444;
+
+}
+.product-price{
+    color: #454444;
+}
